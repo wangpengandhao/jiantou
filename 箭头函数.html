@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	// 箭头函数
+		/*var fn = function(a){
+			return a;
+		
+		var fn = a => a-2;*/
+		var arr= [1,2,3,4,5,9];
+		var result=map(arr,value=>value>=3)
+		console.log(result);
+		function map(arr,fn){
+			var arr1=[];
+			for(var i=0;i<arr.length;i++){
+				if(fn(arr[i])){
+					arr1[arr1.length]=arr[i];
+				}
+			}
+			return arr1;
+		}
+		
+	</script>
+</body>
+</html>

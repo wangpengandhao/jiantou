@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		/*function person(){
+
+		}
+		let haohao = new person();
+		let fengjie = new person();
+		haohao.age = 18;
+		haohao.name = '郝好';
+		haohao.aihao = '发呆';
+		haohao.shengao = 172;
+		haohao.xingge = '内向';
+		console.log(haohao);*/
+		/*fengjie.name = '冯杰'
+		fengjie.age = 3;
+		fengjie.sex = 'women';
+		fengjie.kuzi = 'qiuku';
+		console.log(fengjie);*/
+
+		//在构造函数中添加对象通用属性
+		function iPhone(){
+			this.name = 'ipone8';
+			this.system = 'ios.8';
+			this.size = '7.0';
+			this.color = 'yellow';
+			this.waiguan = function(){
+				alert('大气')
+			}
+		}
+		let iPhone8 = new iPhone;
+		//遍历对象
+		for(let i in iPhone8){			
+ 		 console.log(`${i}---${iPhone8[i]}`);
+		}
+
+		console.log(iPhone8);
+		alert(iPhone8.waiguan())
+
+		
+
+
+		function proson(name,sex,age){
+			this.name = name;
+			this.sex = sex;
+			this.age = age;
+			this.say = function(volue){
+				alert(volue);
+			}
+			this.speech = function(value){
+				this.say(value)
+			}
+		}
+		let zhangsan = new proson('zhangsan','nan',18);
+		console.log(zhangsan);
+		zhangsan.speech('我是张三');
+	</script>
+</body>
+</html>
